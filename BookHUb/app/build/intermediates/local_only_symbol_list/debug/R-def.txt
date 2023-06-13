@@ -1,0 +1,29 @@
+R_DEF: Internal format may change without notice
+local
+color black
+color color_primary
+color color_secondary
+color purple_200
+color teal_200
+color teal_700
+color white
+drawable book
+drawable ic_aboutapp
+drawable ic_dashboard
+drawable ic_favourites
+drawable ic_launcher_background
+drawable ic_launcher_foreground
+drawable ic_profile
+id aboutapp
+id dashboard
+id favourites
+id profile
+layout activity_main
+layout header
+menu menu_drawer
+mipmap ic_launcher
+mipmap ic_launcher_round
+string app_name
+style Theme.BookHub
+xml backup_rules
+xml data_extraction_rules
