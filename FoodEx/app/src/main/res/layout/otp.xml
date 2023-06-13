@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:background="#f58729"
+    android:layout_height="match_parent">
+    <androidx.coordinatorlayout.widget.CoordinatorLayout
+        android:id="@+id/otp_coordinatelayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        >
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/otp_toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:minHeight="?attr/actionBarSize"
+            android:background="@color/background"
+            />
+    </androidx.coordinatorlayout.widget.CoordinatorLayout>
+    <EditText
+        android:id="@+id/otp_text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="300px"
+        android:backgroundTint="#ffffff"
+        android:background="#ffffff"
+        android:layout_marginLeft="20px"
+        android:layout_marginRight="20px"
+        android:padding="30px"
+        android:hint="Enter the otp"
+        android:textColorHint="@color/black"
+        android:textColor="@color/black"
+/> <EditText
+    android:id="@+id/otp_new_password"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50px"
+        android:backgroundTint="#ffffff"
+        android:background="#ffffff"
+        android:padding="30px"
+        android:layout_marginLeft="20px"
+        android:layout_marginRight="20px"
+        android:hint="New password"
+    android:textColorHint="@color/black"
+    android:textColor="@color/black"
+/> <EditText
+        android:id="@+id/otp_confirm_password"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50px"
+        android:backgroundTint="#ffffff"
+        android:background="#ffffff"
+        android:padding="30px"
+        android:layout_marginLeft="20px"
+        android:layout_marginRight="20px"
+        android:hint="Confirm Password"
+    android:textColorHint="@color/black"
+    android:textColor="@color/black"
+
+
+/>
+
+
+    <Button
+        android:id="@+id/btn_otp_submit"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="100px"
+        android:layout_marginRight="100px"
+        android:layout_marginTop="100px"
+        android:backgroundTint="#ffffff"
+        android:text="SUBMIT"
+        android:textColor="#f58729"
+        android:textSize="18sp"
+        />
+        />
+</LinearLayout>

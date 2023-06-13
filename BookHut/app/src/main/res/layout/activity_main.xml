@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.drawerlayout.widget.DrawerLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/drawerlayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activity.MainActivity">
+
+    <androidx.coordinatorlayout.widget.CoordinatorLayout
+        android:id="@+id/coordinatorvg"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <com.google.android.material.appbar.AppBarLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:theme="@style/ThemeOverlay.AppCompat.Dark"
+            android:elevation="0dp">
+<!--      elevates the layout little bit and gives the shadow-->
+            >
+            <androidx.appcompat.widget.Toolbar
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/toolbarview"
+                android:minHeight="?attr/actionBarSize"
+                android:background="@color/purple_500"
+                android:title="@string/toolbartitle"
+                android:titleTextColor="#ffffff"
+                android:theme="@style/ThemeOverlay.AppCompat.Dark"
+                app:layout_scrollFlags="scroll|enterAlways"/>
+<!--            toolbar should not disappear while scrolling-->
+                />
+
+        </com.google.android.material.appbar.AppBarLayout>
+
+
+        <FrameLayout
+            android:id="@+id/framelayout"
+            android:layout_width="fill_parent"
+            android:layout_height="722dp"
+            app:layout_behavior="@string/appbar_scrolling_view_behavior" />
+<!--            By doing this the fragment will start from the bottom of the toolbar-->
+
+
+    </androidx.coordinatorlayout.widget.CoordinatorLayout>
+    <com.google.android.material.navigation.NavigationView
+        android:id="@+id/navview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:headerLayout="@layout/header"
+        app:menu="@menu/menu_drawer"
+        android:layout_gravity="start"
+        />
+<!--always keep the navigation view as last child for some stupid reason-->
+</androidx.drawerlayout.widget.DrawerLayout>

@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/description"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffffff"
+    >
+    <androidx.appcompat.widget.Toolbar
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:id="@+id/description_toolbar"
+        android:minHeight="?attr/actionBarSize"
+        android:background="@color/purple_700"
+        android:theme="@style/ThemeOverlay.AppCompat.Dark"
+
+        />
+
+    <ImageView
+        android:layout_below="@+id/description_toolbar"
+        android:layout_width="300px"
+        android:layout_height="300px"
+        android:src="@drawable/book"
+        android:id="@+id/imgBookImage"
+        android:padding="10px"
+        />/
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/txtBookName"
+        android:padding="8dp"
+        android:text="List Item"
+        android:textColor="#000000"
+        android:textStyle="bold"
+        android:layout_below="@+id/description_toolbar"
+        android:layout_toRightOf="@id/imgBookImage"
+        android:layout_marginTop="50px"
+        />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Name of the Author"
+        android:id="@+id/tvnameoftheauthor"
+        android:layout_below="@id/txtBookName"
+        android:layout_toRightOf="@id/imgBookImage"
+        android:layout_marginLeft="20px"
+        android:textColor="@color/black"
+        />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/tvBookPrice"
+        android:text="Rs. 299"
+        android:textColor="@color/purple_700"
+        android:textStyle="bold"
+        android:layout_below="@id/tvnameoftheauthor"
+        android:layout_toRightOf="@id/imgBookImage"
+        android:layout_marginLeft="20px"
+        />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/star"
+        android:id="@+id/star"
+        android:layout_below="@+id/description_toolbar"
+        android:layout_toLeftOf="@id/tvrating"
+        android:layout_marginTop="130px"
+        android:textColor="#ffd700"
+        />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/tvrating"
+        android:text="4.5"
+        android:layout_below="@+id/description_toolbar"
+        android:textStyle="bold"
+        android:textColor="#ffd700 "
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="100px"
+        android:layout_marginTop="130px"
+        />
+
+    <TextView
+        android:id="@+id/tvdescription"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="About the Book"
+        android:layout_below="@+id/imgBookImage"
+        android:layout_centerInParent="true"
+        android:textColor="@color/black"
+        android:textSize="18sp"
+        android:padding="50px"
+        />
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tvdescription"
+        >
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="adgfads hjas"
+            android:textColor="@color/black"
+            android:id="@+id/description_text"
+            android:padding="30px"
+
+            />
+    </ScrollView>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/description_toolbar"
+        android:layout_above="@+id/addtofavourites"
+        android:background="#ffffff"
+        android:id="@+id/progress_bar_layout"
+        >
+        <ProgressBar
+            android:id="@+id/description_progressbar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+
+
+            />
+    </RelativeLayout>
+    <TextView
+        android:id="@+id/addtofavourites"
+        android:layout_width="match_parent"
+        android:layout_height="100px"
+        android:layout_alignParentBottom="true"
+        android:text="Add to Favourites"
+        android:background="@color/purple_700"
+        android:textColor="#ffffff"
+        android:textStyle="bold"
+        android:textSize="18sp"
+        android:textAlignment="center"
+        />
+
+</RelativeLayout>

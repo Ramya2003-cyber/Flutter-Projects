@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+
+    <ImageView
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+
+        android:src="@drawable/mahesh"
+        android:layout_gravity="center"
+
+        ></ImageView>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:text="Mahesh Babu"
+        android:textSize="18sp"
+        android:padding="8dp"
+        android:textStyle="bold"
+        android:textColor="#0396e6"
+        /> <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:text="prince@gmail.com"
+        android:textSize="18sp"
+        android:padding="8dp"
+        android:textStyle="italic"
+        android:textColor="#fb23f1"
+        /> <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:text="+91 9059132009"
+        android:textSize="18sp"
+        android:padding="8dp"
+
+        android:textColor="#127139"
+        />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:hint="Enter your name here"
+        android:layout_gravity="center"
+        android:inputType="text"
+        /><EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:hint="Enter your password here"
+        android:layout_gravity="center"
+        android:inputType="textPassword"
+        />
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:text="Submit"
+        android:paddingHorizontal="80dp"
+        android:backgroundTint="#f26ea4"
+        android:textColor="#ffffff"
+        android:textSize="18sp"
+        />
+</LinearLayout>

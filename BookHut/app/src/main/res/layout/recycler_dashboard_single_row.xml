@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:id="@+id/singlerow"
+    >
+    <ImageView
+        android:layout_width="300px"
+        android:layout_height="300px"
+        android:src="@drawable/book"
+        android:id="@+id/imgBookmage"
+        android:padding="10px"
+        />/
+<TextView
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:id="@+id/txtBookName"
+    android:padding="8dp"
+    android:text="List Item"
+    android:textColor="#000000"
+    android:textStyle="bold"
+    android:layout_toRightOf="@id/imgBookmage"
+    android:layout_marginTop="50px"
+    />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Name of the Author"
+        android:id="@+id/tvnameoftheauthor"
+        android:layout_below="@id/txtBookName"
+        android:layout_toRightOf="@id/imgBookmage"
+        android:layout_marginLeft="20px"
+        android:textColor="@color/black"
+        />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/tvBookPrice"
+        android:text="Rs. 299"
+        android:textColor="@color/purple_700"
+        android:textStyle="bold"
+        android:layout_below="@id/tvnameoftheauthor"
+        android:layout_toRightOf="@id/imgBookmage"
+        android:layout_marginLeft="20px"
+        />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/star"
+        android:id="@+id/star"
+        android:layout_toLeftOf="@id/tvrating"
+        android:layout_marginTop="130px"
+        android:textColor="#ffd700"
+        />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/tvrating"
+        android:text="4.5"
+        android:textStyle="bold"
+        android:textColor="#ffd700 "
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="100px"
+        android:layout_marginTop="130px"
+        />
+
+
+</RelativeLayout>

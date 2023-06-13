@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#f58729"
+
+    >
+   <ImageView
+       android:layout_width="400px"
+       android:layout_height="400px"
+       android:src="@drawable/loginlogo"
+       android:layout_gravity="center"
+       android:layout_marginTop="300px"
+       />
+   <EditText
+       android:id="@+id/etMobileNumber"
+       android:layout_width="match_parent"
+       android:layout_height="90px"
+       android:hint="   Mobile Number(10 digits)"
+       android:backgroundTint="#ffffff"
+       android:background="#ffffff"
+       android:layout_gravity="center_horizontal"
+       android:layout_marginLeft="100px"
+       android:layout_marginRight="100px"
+       android:layout_marginTop="50px"
+       android:inputType="phone"
+       android:textColorHint="#797774"
+       android:textColor="@color/black"
+
+       />
+    <EditText
+        android:id="@+id/etPassword"
+       android:layout_width="match_parent"
+       android:layout_height="90px"
+       android:hint="   Password"
+       android:backgroundTint="#ffffff"
+       android:background="#ffffff"
+       android:layout_gravity="center_horizontal"
+        android:layout_marginLeft="100px"
+        android:layout_marginRight="100px"
+        android:layout_marginTop="100px"
+        android:inputType="textPassword"
+        android:textColorHint="#797774"
+        android:textColor="@color/black"
+       />
+    <Button
+        android:id="@+id/btnLogIn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="100px"
+        android:layout_marginRight="100px"
+        android:layout_marginTop="100px"
+        android:backgroundTint="#ffffff"
+        android:text="LOG IN"
+        android:textColor="#f58729"
+        android:textSize="18sp"
+        />
+     <TextView
+         android:id="@+id/textForgotPassword"
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+         android:text="@string/forgotpassword"
+         android:textColor="#ffffff"
+         android:layout_gravity="center_horizontal"
+         android:layout_marginTop="50px"
+         android:textSize="18sp"
+
+         />
+    <TextView
+        android:id="@+id/textRegister"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/register"
+        android:textColor="#ffffff"
+        android:textSize="18sp"
+        android:layout_marginTop="450px"
+        android:layout_gravity="center"
+        />
+
+</LinearLayout>

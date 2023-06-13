@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:id="@+id/fav_singlerow"
+    android:layout_height="200dp">
+    <TextView
+        android:id="@+id/grayspace"
+        android:layout_width="match_parent"
+        android:layout_height="200px"
+        android:background="#E2E3E4"
+        />
+
+    <ImageView
+        android:id="@+id/fav_imgBookImage"
+        android:layout_width="107dp"
+        android:layout_height="77dp"
+        android:layout_centerHorizontal="true"
+
+        android:layout_marginBottom="100px"
+        android:src="@drawable/book" />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/fav_tvBookName"
+        android:text="Hello World"
+        android:layout_below="@+id/grayspace"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20px"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:textColor="@color/black"
+
+/> <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/fav_tvBookAuthor"
+        android:text="Android Inc."
+        android:layout_below="@+id/fav_tvBookName"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10px"
+        android:textSize="18sp"
+        android:textColor="@color/black"
+
+/>
+  <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/fav_tvBookPrice"
+        android:text="Rs.499"
+        android:layout_below="@+id/fav_tvBookAuthor"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10px"
+        android:textSize="18sp"
+        android:textColor="#22A77A"
+
+/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/fav_tvrating"
+        android:text="4.5"
+        android:layout_centerHorizontal="true"
+        android:textStyle="bold"
+        android:textColor="#ffd700 "
+
+        android:layout_below="@+id/fav_tvBookPrice"
+        android:layout_marginRight="100px"
+        android:layout_marginTop="10px"
+        />
+    <TextView
+        android:layout_toLeftOf="@+id/fav_tvrating"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/star"
+        android:id="@+id/fav_star"
+        android:layout_below="@+id/fav_tvBookPrice"
+        android:layout_marginTop="10px"
+        android:textColor="#ffd700"
+        />
+
+
+</RelativeLayout>
